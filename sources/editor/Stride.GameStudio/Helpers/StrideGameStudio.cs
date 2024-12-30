@@ -12,13 +12,13 @@ namespace Stride.GameStudio.Helpers
     public static class StrideGameStudio
     {
         [NotNull]
-        public static string CopyrightText1 => "© 2018 Stride contributors";
+        public static string CopyrightText1 => "2025 TIGames Fluxion";
 
         [NotNull]
-        public static string CopyrightText2 => "© 2011-2018 Silicon Studio Corp.";
+        public static string CopyrightText2 => "© 2011-2018 Silicon Studio Corp. © 2018-2024 Stride contributors";
 
         [NotNull]
-        public static string EditorName => $"Stride Game Studio {EditorVersion} ({RuntimeInformation.FrameworkDescription})";
+        public static string EditorName => $"Fluxion Game Studio {EditorVersion} ({RuntimeInformation.FrameworkDescription})";
 
         [NotNull]
         public static string EditorVersion => StrideVersion.NuGetVersion;

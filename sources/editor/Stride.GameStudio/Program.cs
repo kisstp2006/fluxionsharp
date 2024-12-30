@@ -68,7 +68,7 @@ public static class Program
 
         if (IntPtr.Size == 4)
         {
-            MessageBox.Show("Stride GameStudio requires a 64bit OS to run.", "Stride", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show("Stride GameStudio requires a 64bit OS to run.", "Fluxion", MessageBoxButton.OK, MessageBoxImage.Error);
             Environment.Exit(1);
         }
 

@@ -42,6 +42,7 @@ namespace Stride.GameStudio.ViewModels
             OpenAboutPageCommand = new AnonymousCommand(serviceProvider, OpenAboutPage);
             OpenSessionCommand = new AnonymousTaskCommand<UFile>(serviceProvider, RestartAndOpenSession);
             ReloadSessionCommand = new AnonymousTaskCommand(serviceProvider, () => RestartAndOpenSession(Session.SessionFilePath));
+            ExitToProjectListCommand = new AnonymousCommand(serviceProvider, ExitToProjectListRun);
         }
 
         public static GameStudioViewModel GameStudio => (GameStudioViewModel)Instance;
@@ -70,6 +71,9 @@ namespace Stride.GameStudio.ViewModels
         [NotNull]
         public ICommandBase ReloadSessionCommand { get; }
 
+        [NotNull]
+        public ICommandBase ExitToProjectListCommand { get; }
+
         protected internal override IEnumerable<string> TextAssetTypes
         {
             get
@@ -82,6 +86,10 @@ namespace Stride.GameStudio.ViewModels
         protected override void RestartAndCreateNewSession()
         {
             restartArguments = "/NewProject";
+            CloseAndRestart();
+        }
+        protected  void ExitToProjectListRun()
+        {
             CloseAndRestart();
         }
 

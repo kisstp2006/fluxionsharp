@@ -119,7 +119,7 @@ namespace Stride.Editor.CrashReport
                 var error = "An error occurred while opening the browser. You can access the privacy policy at the following url:"
                     + Environment.NewLine + Environment.NewLine + PrivacyPolicyUrl;
 
-                MessageBox.Show(error, @"Stride", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(error, @"Fluxion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -151,7 +151,7 @@ namespace Stride.Editor.CrashReport
             var result = task.Result;
             if (!result)
             {
-                MessageBox.Show(@"An error occurred while sending the report. Unable to contact the server.", @"Stride", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(@"An error occurred while sending the report. Unable to contact the server.", @"Fluxion", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -45,7 +45,7 @@ namespace Stride.Core.Diagnostics
             EnsureConsole();
 
 #if STRIDE_PLATFORM_ANDROID
-            const string appliName = "Stride";
+            const string appliName = "Fluxion";
             var exceptionMsg = GetExceptionText(logMessage);
             var messageText = GetDefaultText(logMessage);
             if (!string.IsNullOrEmpty(exceptionMsg))

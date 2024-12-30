@@ -193,6 +193,7 @@
         <Separator/>
         <MenuItem Header="{sd:Localize Reload project, Context=Menu}" Command="{Binding ReloadSessionCommand}" Icon="{sd:Image {StaticResource ImageReloadProject}}"/>
         <Separator/>
+        <MenuItem Header="{sd:Localize Quit to project selection, Context=Menu}" Command="{Binding ExitToProjectListCommand}"/>
         <MenuItem Header="{sd:Localize Quit, Context=Menu}">
           <i:Interaction.Behaviors>
             <sd:MenuItemCloseWindowBehavior/>
