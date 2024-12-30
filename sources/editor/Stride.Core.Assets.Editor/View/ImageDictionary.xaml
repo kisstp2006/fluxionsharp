@@ -339,8 +339,12 @@
   <DrawingImage x:Key="ImageProjectPage">
     <DrawingImage.Drawing>
       <DrawingGroup>
+        <GeometryDrawing Brush="#00FFFFFF" Geometry="F1M16,16L0,16 0,0 16,0z" />
         <GeometryDrawing Brush="Black" 
-                       Geometry="M50,1255 L50,130 1250,130 1250,1255 50,1255 M2300,1250 L2300,280 1250,280 1250,1250 2300,1250 Z" />
+                       Geometry="M50 1255 l0 -1125 1200 0 1200 0 0 1125 0 1125 -1200 0 -1200 0 0 -1125z m2250 -5 l0 -970 -1050 0 -1050 0 0 970 0 970 1050 0 1050 0 0 -970z" />
+        <GeometryDrawing Brush="Black" 
+                       Geometry="M280 1055 l0 -665 960 0 960 0 0 665 0 665 -960 0 -960 0 0 -665z" />
+
       </DrawingGroup>
     </DrawingImage.Drawing>
   </DrawingImage>
