@@ -335,6 +335,15 @@
       </DrawingGroup>
     </DrawingImage.Drawing>
   </DrawingImage>
+  <!--  Project page icon  -->
+  <DrawingImage x:Key="ImageProjectPage">
+    <DrawingImage.Drawing>
+      <DrawingGroup>
+        <GeometryDrawing Brush="Black" 
+                       Geometry="M50,1255 L50,130 1250,130 1250,1255 50,1255 M2300,1250 L2300,280 1250,280 1250,1250 2300,1250 Z" />
+      </DrawingGroup>
+    </DrawingImage.Drawing>
+  </DrawingImage>
 
   <!--  Package icons  -->
   <!--  ImagePackage: This icon can be considered as default Stride solution  -->
